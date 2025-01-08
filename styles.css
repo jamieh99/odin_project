@@ -76,15 +76,56 @@ body {
     
 }
 
-.information .button {
-    color: #3882F6;
+.information .info-header {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
 }
 
+.quote {
+    background-color: #E5E7EB;
 
+}
+
+.quote .quote-text {
+    color: #1F2937;
+}
+
+.call-to-action {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.call-to-action .box {
+    background-color:#3882F6;
+    width: 700px;
+    height: 100px;
+    align-self: center;
+
+}
+
+.call-to-action .text {
+    font-size: 20px;
+    
+    background-color: lightblue;
+
+}
+.call-to-action .button {
+    background-color: #3882F6;
+    color: white;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
 
 footer {
     display: flex;
-    position: fixed;
     left: 0;
     bottom: 0;
     height: 50px;
