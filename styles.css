@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+	max-width: 100%;
+	font-family: Roboto, Times, Times New Roman, Georgia, serif;
+	font-size: 14pt;
+    background-color: #1F2937;
+    
+}
+
+.navigation {
+    background-color: #1F2937;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+        
+}
+
+.ul {
+    display: flex;
+    gap: 12px;
+    list-style-type: none;
+    align-items: baseline;
+    padding: 0px;
+    margin: 0;
+  }
+  .logo {
+    margin-right: auto;
+    width: 50px;
+    height: 60px;
+  }
+
+.header-link {
+    font-size: 18px;
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #1F2937;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+
+
+}
+
+.hero {
+
+}
+
+.information .button {
+    color: #3882F6;
+}
+
+
+
+footer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    background-color: #1F2937;
+    
+}
+
+footer div {
+    height: 10px;
+    font-size: 12pt;
+    align-self: center;
+    color: white;
+
+}
