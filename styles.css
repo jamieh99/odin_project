@@ -2,9 +2,12 @@ body {
     margin: 0;
     padding: 0;
 	max-width: 100%;
-	font-family: Roboto, Times, Times New Roman, Georgia, serif;
+	font-family: Roboto, Times New Roman, Georgia, serif;
 	font-size: 14pt;
+    
     background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -24,11 +27,17 @@ body {
     padding: 0px;
     margin: 0;
   }
-  .logo {
-    margin-right: auto;
+.logo {
+    
     width: 50px;
     height: 60px;
   }
+
+.name {
+    margin-right: auto;
+    align-self: center;
+    color: white;
+}
 
 .header-link {
     font-size: 18px;
@@ -38,31 +47,35 @@ body {
 
 .hero {
     background-color: #1F2937;
+    margin-top: 10px;
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 10px;
+    display: flex;
     
-
-
 }
 
-.hero .main-text {
+.hero .hero-left {
+    flex-grow: 1;
+}
+
+.hero .hero-left .main-text {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
 
-
 }
 
-.hero .second-text {
+.hero .hero-left .second-text {
     font-size: 18px;
     color: #E5E7EB;
 
 }
 
-.hero .button {
+.hero .hero-left .button {
     color: white;
     border: none;
-    background-color: blue;
+    background-color: #3882F6;
     border-radius: 12px;
     padding: 10px 24px;
     text-align: center;
@@ -71,8 +84,25 @@ body {
     font-size: 16px;
 }
 
+.hero .hero-right {
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+}
+
+.hero .hero-right .image {
+    width: 300;
+    height: 200px;
+    align-self: center;
+}
+
 .information {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    
     
 }
 
@@ -80,38 +110,83 @@ body {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
+    text-align: center;
+}
+
+.information .info-body {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.information .info-body div {
+    display: flex;
+    flex-direction: column;
+           
+}
+
+.information .p {
+    align-self: center;
+
+}
+
+.information .InfoImage {
+    border: 3px solid #3882F6 ;
+    border-radius: 8px;
+    align-self: center;
 }
 
 .quote {
     background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
 
 }
 
 .quote .quote-text {
     color: #1F2937;
+    align-self: center;
+    font-style: italic;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.quote .quote-ref {
+    color: black;
+    font-weight: bold;
+   
+    margin-left: 950px;
 }
 
 .call-to-action {
     background-color: white;
     display: flex;
     justify-content: center;
+        
 }
 
 .call-to-action .box {
     background-color:#3882F6;
-    width: 700px;
-    height: 100px;
-    align-self: center;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 50px;
+    border: 2px solid white;
+    border-radius: 12px;
+    margin: 100px;
 
 }
 
-.call-to-action .text {
+.call-to-action .box .text {
     font-size: 20px;
-    
-    background-color: lightblue;
+    color: white;
 
 }
-.call-to-action .button {
+.call-to-action .box .button {
     background-color: #3882F6;
     color: white;
     border: 2px solid white;
@@ -125,7 +200,9 @@ body {
 }
 
 footer {
+   
     display: flex;
+    position:
     left: 0;
     bottom: 0;
     height: 50px;
